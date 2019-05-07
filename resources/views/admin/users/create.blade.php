@@ -5,7 +5,7 @@
 
     <h1>Create Users</h1>
 
-    <form method="POST" action="./" accept-charset="utf-8" enctype="mulipart/form-data">
+    <form method="POST" action="./" accept-charset="utf-8" enctype="multipart/form-data">
         {{csrf_field()}}
         <input type="hidden" name="_method" value="POST">
 
@@ -39,7 +39,7 @@
         </div>
 
         <div class="form-group">
-            <label for="photo_id">Title:</label>
+            <label for="photo_id">Photo:</label>
             <input type="file" name="photo_id" id="photo_id" class="form-control">
         </div>
 
