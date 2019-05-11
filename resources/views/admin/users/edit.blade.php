@@ -66,10 +66,17 @@
         </div>
 
         <div class="form-group">
-            <input type="submit" value="Create User" class="btn btn-primary">
+            <input type="submit" value="Create User" class="btn btn-primary col-sm-6">
         </div>
 
     </form>
+
+        <form method="POST" action="./" class="">
+            {{csrf_field()}}
+            <input type="hidden" name="_method" value="DELETE" >
+            <input type="submit" value="Delete user" class="btn btn-danger col-sm-6">
+        </form>
+
     </div>
 
     </div>
