@@ -12,9 +12,9 @@
     <thead>
       <tr>
         <th>Id</th>
+          <th>Photo</th>
         <th>User</th>
         <th>Category</th>
-          <th>Photo</th>
           <th>Title</th>
           <th>body</th>
           <th>Created</th>
@@ -31,7 +31,7 @@
         <td>{{$post->id}}</td>
           <td><img height="50" src="{{$post->photo ? $post->photo->file : 'http://placehold.it/400x400'}} " alt=""></td>
           <td>{{$post->user->name}}</td>
-        <td>{{$post->category_id}}</td>
+        <td>{{$post->category ? $post->category->name : 'Uncategorized'}}</td>
           <td>{{$post->title}}</td>
           <td>{{$post->body}}</td>
           <td>{{$post->created_at->diffForhumans()}}</td>
